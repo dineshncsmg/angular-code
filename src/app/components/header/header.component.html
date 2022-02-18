@@ -1,0 +1,24 @@
+<header>
+    <div class="container">
+        <div class="navbar navbar-light">
+           
+              <div class="navbar-brand align-item-center d-flex">
+                <a [routerLink]="['/products']">
+                   <img src="http://localhost:4200//src/assets/images/books.png" alt="Best Books">
+                   <strong>Best Books</strong>
+                </a>
+                   <div class="form-group">
+                       <input class="form-control" type="text" placeholder="Search Book...">
+                   </div>
+              </div>
+              <button [routerLink]="['/cart']" class="btn cart-button">
+                <img src="http://localhost:4200//src/assets/images/shopping-cart.png" alt="Cart">
+                <div class="badge bg-danger">
+                    <span>
+                     {{ cart_count }}
+                    </span>
+                </div>
+             </button>
+        </div>
+    </div>
+</header>

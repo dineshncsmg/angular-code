@@ -1,0 +1,70 @@
+
+<!-- Book Genres starts -->
+<section class="books-section">
+      <div class="container">
+          <div class="books-genres">
+            <div class="heading">
+                <h1>Tamil Books</h1>
+            </div>
+            <div class="books-list">
+                <ul>
+                    <li *ngFor="let product of productList">
+                        <div class="card">
+                            <div class="card-top">
+                            <img src="{{product.img}}" alt="{{product.title}}">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-title">
+                                    <h2>{{product.title}}</h2>
+                                </div>
+                                <div class="authour">
+                                    <p><span>Author:</span>{{product.auth}}</p>
+                                </div>
+                                <div class="cost">
+                                    <p><span>Price:</span>{{product.amt}}&#8377;</p>
+                                </div>
+                                <div class="button">
+                                   <a href="javascript:void:(0)">Buy Now</a> 
+                                   <a (click)="addItemToCart(product.prodId,product.qnt,product.title,product.img,product.amt,product.auth)">Add to Cart</a>
+                                   <!-- <a (click)="addCart(product)">Add to Cart</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="books-genres">
+            <div class="heading">
+                <h1>English Books</h1>
+            </div>
+            <div class="books-list">
+                <ul>
+                    <li *ngFor="let product_1 of productList_1">
+                        <div class="card">
+                            <div class="card-top">
+                            <img src="{{product_1.img}}" alt="{{product_1.title}}">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-title">
+                                    <h2>{{product_1.title}}</h2>
+                                </div>
+                                <div class="authour">
+                                    <p><span>Author:</span>{{product_1.auth}}</p>
+                                </div>
+                                <div class="cost">
+                                    <p><span>Price:</span>{{product_1.amt}}&#8377;</p>
+                                </div>
+                                <div class="button">
+                                   <a href="javascript:void:(0)">Buy Now</a> 
+                                   <!-- <a (click)="addCart(product_1)">Add to Cart</a>  -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+      </div>
+</section>
+<!-- tamil books section ends -->

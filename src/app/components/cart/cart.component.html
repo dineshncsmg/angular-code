@@ -1,0 +1,81 @@
+
+<ng-container *ngIf="true" >
+   <div class="cart-in">
+        <div class="container">
+            <div class="card-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Details</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Remove From Cart</th>
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of products">
+                            <td>
+                                <p>{{item.prodId}}</p>
+                            </td>
+                            <td>
+                                <div class="book-name">
+                                  <h3>{{item.title}}</h3> 
+                                </div>
+                            </td>
+                            <td>
+                                <div class="image">
+                                   <img src="{{item.img}}" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="auth">
+                                    <span>Author: {{item.auth}}</span>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="qty">
+                                    <a class="dec btn btn-danger">-</a>
+                                      <span>{{item.qnt}}</span>
+                                    <a class="inc btn btn-primary">+</a>
+                                </div>
+                            </td>
+                            <td>
+                                <p>{{item.amt}} &#8377;</p>
+                            </td>
+                            <td>
+                                <div class="delete">
+                                   <a (click)="_emptyCart(item.prodId)"><img src="http://localhost:4200//src/assets/images/delete.png" alt=""></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+  </div>
+</ng-container>
+
+
+
+<ng-container *ngIf="false">
+    <div class="empty-cart-div">
+        <div class="container">
+            <div class="heading">
+                <h1>
+                    My Cart
+                </h1>
+            </div>
+            <div class="empty-cart">
+                <img src="../../../assets/images/empty-cart.png" alt="Your Cart is Empty" title="Your Cart is Empty">
+                <p>Your Cart Is Empty !</p>
+                <div class="button">
+                    <a href="/">Shop Now</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+</ng-container>
+

@@ -1,0 +1,70 @@
+.books-section{
+    padding: 3rem 0;
+    background-color: #e9e9e9;
+}
+.books-section h2{
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.books-section .books-list ul{
+    padding-left: 0;
+    width: 100%;
+    margin: auto;
+}
+.books-section .books-list ul li{
+    display: inline-block;
+    list-style: none;
+    width: 23%;
+    margin: 0 1%;
+}
+.books-section .books-list ul li .card{
+    border: .1rem solid rgb(231, 231, 231);
+    border-radius: .2rem;
+    margin: 2rem 0;
+}
+.books-section .books-list ul li .card:hover{
+     transform: scale(1.05);
+     transition: .6s;
+     cursor: pointer;
+}
+.books-section .books-list ul li .card img{
+    width: 100%;
+}
+.books-section .books-list ul li .card .card-bottom{
+    padding: 1.5rem;
+}
+.books-section .books-list ul li .card p{
+    margin-bottom: .2rem;
+}
+.books-section .books-list ul li .card .button{
+    margin-top: 1rem;
+}
+.books-section .books-list ul li .card .button a:nth-child(1){
+   float: left;
+   background-color: #fff;
+   color: #000;
+   border: .1rem solid #4b2461;
+   border-radius: 3rem;
+   padding: .3rem  1rem;
+   text-decoration: none;
+}
+.books-section .books-list ul li .card .button a:nth-child(2){
+    float: right;
+    background-color: #4b2461;
+    color: #fff;
+    border: .1rem solid #4b2461;
+    border-radius: 3rem;
+    padding: .3rem 1rem;
+    text-decoration: none;
+ }
+.books-section .books-list ul li .card .button a:hover:nth-child(1){
+    background-color: #4b2461;
+    color: #fff;
+    transition: .6s;
+ }
+.books-section .books-list ul li .card .button a:hover:nth-child(2){
+    background-color: #fff;
+    color: #4b2461;
+    transition: .6s;
+ }

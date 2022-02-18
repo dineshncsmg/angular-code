@@ -1,0 +1,38 @@
+header{
+   background-color:#4b2461 !important;
+}
+header img{
+    width: 2rem;
+}
+header a{
+    text-decoration: none;
+}
+header .navbar-brand strong{
+    padding-left: 1.5rem;
+    color: #fff;
+}
+header .form-control{
+    width: 36rem;
+    margin-left: 2rem;
+    border-radius: .3rem;
+}
+header .form-group{
+    position: relative;
+}
+header .form-group:after{
+    position: absolute;
+    content: "";
+    background-image: url(http://localhost:4200//src/assets/images/search.png);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    top: 0.4rem;
+    right: 0;
+}
+header .cart-button:focus{
+   box-shadow: none !important;
+}
+header .cart-button:hover{
+    transform: scale(1.1);
+}

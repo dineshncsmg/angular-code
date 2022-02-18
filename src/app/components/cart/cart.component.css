@@ -1,0 +1,66 @@
+.empty-cart-div{
+    padding: 4rem 0;
+}
+
+.empty-cart-div .empty-cart{
+    text-align: center;
+    border: .2rem solid #4b2461;
+    border-radius: 2rem;
+    padding: 3rem 0;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0.2rem 0.8rem 1rem #00000045;
+}
+.empty-cart-div .empty-cart img{
+    width: 41%;
+    margin-left: -7rem;
+}
+
+.empty-cart-div .empty-cart .button a{
+    background-color: #4b2461;
+    color: #fff;
+    border: .1rem solid #4b2461;
+    border-radius: 3rem;
+    padding: 0.1rem 1rem .3rem;
+    text-decoration: none;
+}
+
+.empty-cart-div .empty-cart p{
+    font-weight: 500;
+}
+
+.empty-cart-div .empty-cart .button a:hover{
+    background-color:#fff;
+    color: #4b2461;
+    transition: .6s;
+}
+.cart-in{
+    padding: 4rem 0;
+}
+.cart-in .card-product{
+    border: .15rem solid #4b2461;
+    border-radius: 1rem;
+}
+.cart-in .table{
+    text-align: center;
+}
+.cart-in .table td{
+    vertical-align: middle;
+}
+.cart-in .table .book-name h3{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.cart-in .table .image img{
+    width: 6rem;
+}
+.cart-in .table .delete img{
+    width: 1.5rem;
+}
+.cart-in .table .delete a{
+
+}
+
+.cart-in .table .delete a img:hover{
+    transform: scale(1.1);
+}
